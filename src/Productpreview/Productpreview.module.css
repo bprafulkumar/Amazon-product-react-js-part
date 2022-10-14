@@ -1,0 +1,54 @@
+.productpreview{
+    width: 100%;
+    position: relative;
+  }
+  .Timesection{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 48px;
+    font-weight: 600;
+  }
+  .Heartbeatsection{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 45px;
+    font-weight: 600;
+  }
+  .Heartbeatsection > i{
+      color: red;
+      /* margin-top: 25px; */
+      animation: beat 1s infinite;
+  }
+  .Heartbeatsection > p{
+    font-size: 40px;
+  }
+  
+  
+  @keyframes beat{
+    0%{
+      transform: scale(1,1);
+    }
+    50%{
+      transform: scale(1.2,1.2);
+    }
+    100%{
+      transform: scale(1,1);
+    }
+  }
+  .Heartbeatsection > p{
+    margin-top: 16px;
+  }
+  .productpreview> img{
+    width: 100%;
+    pointer-events: none;
+    margin-top: 25px
+  }
+  .date{
+    font-size: 35px;
+  }
